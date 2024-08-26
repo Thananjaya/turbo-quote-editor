@@ -1,0 +1,5 @@
+@mixin media($size) {
+  @if $size == tabletAndUp {
+    @media(min-width: 50rem) { @content; }
+  }
+}
