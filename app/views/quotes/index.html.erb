@@ -7,6 +7,8 @@
   <% end %>
   
   <%= turbo_frame_tag Quote.new %>
-  <%= render @quotes %>
+  <%= turbo_frame_tag 'quotes' do %>
+    <%= render @quotes %>
+  <% end %>
 
 </main>
